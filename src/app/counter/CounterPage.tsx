@@ -1,15 +1,14 @@
 "use client"
 
-import Counter from "@/components/Counter"
+import Button from "@/components/Button"
+import Counter1 from "@/components/Counter1"
+import CounterContainer from "@/components/CounterContainer"
+import CounterLabel from "@/components/CounterLabel"
 
 function CounterPage() {
+
     return (<>
-        <div>
-            <Counter></Counter>
-        </div>
-        <div>
-            <Counter></Counter>
-        </div>
+        <CounterContainer></CounterContainer>
     </>)
 }
 
