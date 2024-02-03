@@ -67,8 +67,8 @@
   // "remoteUser": "root"
   "runArgs": ["--name", "SE_CLASS_REACT_devcontainer"],
 
-  "workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=cached",
-  "workspaceFolder": "/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder}/,target=/se-class-react,type=bind,consistency=cached",
+  "workspaceFolder": "/se-class-react",
 
   "mounts": [
     "source=${localEnv:HOME}/.gitconfig,target=/home/node/.gitconfig,type=bind,consistency=cached",
