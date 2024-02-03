@@ -1,13 +1,12 @@
 import FooterLeft from "@/components/FooterLeft"
 import FooterRight from "@/components/FooterRight"
 
-function Footer(props) {
-    const { count } = props
+function Footer() {
 
     return <>
         <div>Footer</div>
-        <FooterLeft count={count}></FooterLeft>
-        <FooterRight count={count}></FooterRight>
+        <FooterLeft></FooterLeft>
+        <FooterRight ></FooterRight>
     </>
 }
 

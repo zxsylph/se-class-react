@@ -4,9 +4,12 @@ import Counter from "@/components/Counter"
 import CounterLabel from "@/components/CounterLabel"
 import Button from "@/components/Button"
 import Footer from "@/components/Footer"
+import { useAtom } from "jotai"
+import { countAtom } from "@/datas/count"
+import { DevTools } from "jotai-devtools"
 
 function CounterContainer() {
-    const [count, setCount] = useState(0)
+    const [count, setCount] = useAtom(countAtom)
 
     const handleAddClick = () => {
         setCount(count + 1)
@@ -21,7 +24,7 @@ function CounterContainer() {
     }
 
     return <>
-        <CounterLabel count={count}></CounterLabel>
+        <CounterLabel ></CounterLabel>
         <Button onClick={handleAddClick} label="Add"></Button>
         <Button onClick={handleSubClick} label="Sub"></Button>
         <Button onClick={handleResetClick} label="Reset"></Button>
@@ -30,7 +33,8 @@ function CounterContainer() {
         <br />
         <br />
         <br />
-        <Footer count={count}></Footer>
+        <Footer ></Footer>
+        <DevTools />
     </>
 }
 

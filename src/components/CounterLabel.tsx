@@ -2,8 +2,12 @@
 
 import { useState } from "react"
 
-function CounterLabel(props) {
-    const { count } = props
+import { countAtom } from '@/datas/count'
+import { useAtom } from "jotai"
+
+function CounterLabel() {
+    const [count] = useAtom(countAtom)
+
     return (<>
         <div>CounterLabel</div>
         <div>{count}</div>
